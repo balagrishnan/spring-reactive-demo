@@ -9,6 +9,6 @@ import java.time.Duration;
 public class ReactiveService {
     public Flux<String> getMessage() {
         return Flux.just("Message 1", "Message 2", "Message 3")
-                .delayElements(Duration.ofSeconds(3));
+                .delayElements(Duration.ofSeconds(1));
     }
 }
